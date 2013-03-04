@@ -1,3 +1,4 @@
-# Twitter API 1.1 client for NodeJS
+# Twitter API library for NodeJS
 
-See examples for usage 
+* Supports REST and Streaming APIs to version 1.1
+* See examples for usage
