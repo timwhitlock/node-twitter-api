@@ -1,0 +1,15 @@
+{
+    "name": "twitter-api",
+    "version": "1.0.0",
+    "author" : "Tim Whitlock (http://timwhitlock.info)",
+    "description": "Twitter API 1.1 client supporting REST and streaming",
+    "files": [ "lib", "examples", "README.md" ],
+    "main" : "lib/twitter.js",
+    "repository" : { 
+        "type" : "git", 
+        "url"  : "http://github.com/timwhitlock/node-twitter-api.git"
+    },
+    "engines" : {
+        "node" : ">=0.6.0"
+    }
+}
