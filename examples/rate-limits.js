@@ -5,10 +5,10 @@
 var client = require('../lib/twitter').createClient();
 
 client.setAuth ( 
-    '4MROlaLN7k2IyzhLrC7bg',
-    'x0HLIFFAvCGq3kse9EZt5asrPTzMhYxTtztp1QidI',
-    '16683251-gRyf6HILdKYrnGYvcYl4ZABS2h7Js9ylJ2h22kD8Q',
-    'V0fmla3bfopj9ApclxcKRfppU8OF9V6iLbHwm9U7I'
+    'your consumer key',
+    'your consumer secret', 
+    'some access key',
+    'some access secret' 
 );
 
 
@@ -21,7 +21,6 @@ function nextPage(){
                 var resetTime = client.getRateLimitReset();
                 console.error('Wait until '+ resetTime.toString() );
             }
-            process.exit();
         }
         else {
             console.log('OK: '+cursor+' -> '+page.ids.length+' followers' );
@@ -37,8 +36,8 @@ function nextPage(){
                     console.log( remaining+' of '+limit+' requests remaining');
                 }
             }
+            cursor && nextPage();
         }
-        cursor && nextPage();
     } );
 }
 nextPage();
