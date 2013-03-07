@@ -1,4 +1,9 @@
 # Twitter API library for NodeJS
 
-* Supports REST and Streaming APIs to version 1.1
-* See examples for usage
+* Supports version 1.1 of Twitter's REST and Streaming APIs
+* See examples directiory for usage
+
+
+## Install
+
+`npm install twitter-api`
