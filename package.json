@@ -1,6 +1,6 @@
 {
     "name": "twitter-api",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author" : "Tim Whitlock (http://timwhitlock.info)",
     "description" : "Twitter API 1.1 client supporting REST and streaming",
     "keywords" : [ "twitter", "tweet", "streaming", "rest", "api", "oauth" ],
