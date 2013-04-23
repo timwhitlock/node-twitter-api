@@ -1,6 +1,5 @@
 /**
  * Example filters tweets via Streaming API.
- * Raw JSON packets are returned to avoid unwanted parsing overhead
  */
 
 
