@@ -16,7 +16,11 @@ client.setAuth (
 var num = 0,
     max = 10;
 
-client.stream( 'statuses/filter', { track: '#sxsw' }, function( json ){
+client.stream( 'statuses/filter', { track: '#sxsw' }, function( json, error ){
+    if( err ){
+        console.error('Stream error: ' + error);
+        return;
+    }
     var tweet = JSON.parse( json );
     if( tweet.text && tweet.user ){
         console.log( tweet.user.screen_name+': "'+tweet.text+'"');
