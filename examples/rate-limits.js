@@ -6,9 +6,9 @@ var client = require('../lib/twitter').createClient();
 
 client.setAuth ( 
     'your consumer key',
-    'your consumer secret', 
+    'your consumer secret',
     'some access key',
-    'some access secret' 
+    'some access secret'
 );
 
 
@@ -25,11 +25,11 @@ function nextPage(){
         else {
             console.log('OK: '+cursor+' -> '+page.ids.length+' followers' );
             cursor = page.next_cursor_str;
-            
+
             var limit = client.getRateLimit();
             if( limit ){
                 var remaining = client.getRateLimitRemaining();
-                if( remaining ){
+                if( !remaining ){
                     console.log( 'No requests left. Next call will throw 429 .. you\'ll see' );
                 }
                 else {
