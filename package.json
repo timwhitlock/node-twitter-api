@@ -1,6 +1,6 @@
 {
     "name": "twitter-api",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "license": "MIT",
     "author" : "Tim Whitlock (http://timwhitlock.info)",
     "description" : "Twitter API 1.1 client supporting REST and streaming",
